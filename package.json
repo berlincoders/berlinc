@@ -5,3 +5,7 @@
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets"
   }
 }
+"engines": {
+  "node": "14.x",
+  "yarn": "1.x"
+}
