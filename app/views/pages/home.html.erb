@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <p>Find me in app/views/pages/home.html.erb</p>
+  <%= render "pages/carrusel" %>
+</div>
+
+<script>
+  // Initialize the carousel when the document is ready
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleDark'), {
+      // Options, if needed
+    });
+  });
+</script>
+
